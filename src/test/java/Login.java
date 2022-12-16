@@ -6,24 +6,32 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Login {
-   WebDriver wd;
-@BeforeMethod
+
+    WebDriver wd;
+    @BeforeMethod
     public void preCondition(){
         // open browser
         wd = new ChromeDriver();
-        //open site
+        // open site
         wd.get("https://telranedu.web.app/");
     }
-@Test
+
+    @Test
     public void loginSuccess(){
+        // open form
+        // wd find button + click
+        // fill form
+        // find email + click + type
+        // find password + click + type
+        // submit  form
+        // find button login + click
 
-
-    Assert.assertEquals();
-}
-
-@AfterMethod
+        Assert.assertEquals("","");
+        // ac ==exp
+    }
+    @AfterMethod
     public void postCondition(){
-    //close browser
-    wd.quit();
-}
+        // close browser
+        wd.quit();
+    }
 }
